@@ -157,7 +157,7 @@ const Contact = () => {
                     type="tel"
                     name="phone"
                     className="form-input"
-                    placeholder="9842312345"
+                    placeholder="10 digits"
                     maxLength={10}
                     pattern="[0-9]{10}"
                     value={formData.phone}
