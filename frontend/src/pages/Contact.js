@@ -137,7 +137,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+              <div className="contact-form-row">
                 <div className="form-group">
                   <label className="form-label">Email Address *</label>
                   <input
@@ -145,21 +145,26 @@ const Contact = () => {
                     name="email"
                     required
                     className="form-input"
-                    placeholder="name@example.com"
+                    placeholder="name@gmail.com"
                     value={formData.email}
                     onChange={handleChange}
                   />
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label">Phone Number</label>
+                  <label className="form-label">Phone Number (10 Digits)</label>
                   <input
                     type="tel"
                     name="phone"
                     className="form-input"
-                    placeholder="98423XXXXX"
+                    placeholder="10 digits"
+                    maxLength={10}
+                    pattern="[0-9]{10}"
                     value={formData.phone}
-                    onChange={handleChange}
+                    onChange={(e) => {
+                      const val = e.target.value.replace(/\D/g, '').slice(0, 10);
+                      setFormData({ ...formData, phone: val });
+                    }}
                   />
                 </div>
               </div>

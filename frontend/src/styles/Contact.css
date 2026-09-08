@@ -160,8 +160,24 @@
   min-height: 110px;
 }
 
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+  .contact-info-card,
+  .contact-form-card {
+    padding: 24px 18px;
   }
 }
