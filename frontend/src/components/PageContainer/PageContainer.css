@@ -1,0 +1,12 @@
+.page-container-root {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page-container-root {
+    padding: 24px 16px;
+  }
+}

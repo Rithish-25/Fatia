@@ -1,0 +1,31 @@
+.notfound-card {
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  padding: 60px 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 540px;
+  margin: 40px auto;
+}
+
+.notfound-code {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-soft-gold);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.notfound-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 12px;
+}
+
+.notfound-desc {
+  font-size: 1rem;
+  color: var(--color-slate-gray);
+  margin-bottom: 28px;
+}

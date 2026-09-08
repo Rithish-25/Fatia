@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/navbar/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Members from './pages/Members';
-import Board from './pages/Board';
-import Events from './pages/Events';
-import Fair from './pages/Fair';
-import FairYearPage from './pages/FairYearPage';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import ScrollToTop from './components/ScrollToTop';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import Members from './pages/Members/Members';
+import Board from './pages/Board/Board';
+import Events from './pages/Events/Events';
+import Fair from './pages/Fair/Fair';
+import FairYearPage from './pages/FairYearPage/FairYearPage';
+import Contact from './pages/Contact/Contact';
+import NotFound from './pages/NotFound/NotFound';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (

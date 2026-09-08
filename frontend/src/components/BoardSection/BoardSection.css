@@ -1,0 +1,44 @@
+.board-section-root {
+  margin-bottom: 48px;
+}
+
+.board-section-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.board-section-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-light-beige);
+}
+
+.board-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1100px) {
+  .board-section-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .board-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .board-section-grid {
+    grid-template-columns: 1fr;
+  }
+}

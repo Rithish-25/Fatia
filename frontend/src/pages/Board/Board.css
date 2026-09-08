@@ -1,0 +1,4 @@
+/* Board Page Specific Custom Styles */
+.board-page-container {
+  min-height: 80vh;
+}

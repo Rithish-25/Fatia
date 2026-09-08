@@ -3,6 +3,9 @@ node_modules/
 /.pnp
 .pnp.js
 
+# Testing
+coverage/
+
 # Production build output
 build/
 dist/
@@ -25,3 +28,4 @@ lerna-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+

@@ -1,0 +1,60 @@
+.logo-root {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.logo-root:hover {
+  opacity: 0.9;
+}
+
+.logo-img {
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+}
+
+.logo-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: 0.03em;
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-soft-gold);
+  margin-top: 3px;
+  max-width: 460px;
+}
+
+@media (max-width: 900px) {
+  .logo-title {
+    font-size: 1.5rem;
+  }
+  .logo-subtitle {
+    font-size: 0.58rem;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-title {
+    font-size: 1.3rem;
+  }
+  .logo-subtitle {
+    font-size: 0.5rem;
+    max-width: 200px;
+  }
+}
