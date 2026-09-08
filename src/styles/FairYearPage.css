@@ -1,0 +1,185 @@
+.fair-year-header-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  border-radius: 20px;
+  padding: 36px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+  overflow: hidden;
+}
+
+.fair-year-header-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: var(--color-soft-gold);
+}
+
+.fair-year-badge-pill {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+  padding: 4px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.fair-year-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-charcoal);
+  margin-bottom: 12px;
+}
+
+.fair-year-tagline {
+  font-size: 1.05rem;
+  color: var(--color-slate-gray);
+  line-height: 1.5;
+}
+
+/* Full Width About Section */
+.fair-about-box-full {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.fair-section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fair-about-text {
+  font-size: 1.02rem;
+  color: var(--color-slate-gray);
+  line-height: 1.7;
+}
+
+/* Dedicated Committee Members Section */
+.fair-committee-section {
+  margin-bottom: 44px;
+}
+
+.fair-committee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.fair-committee-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  border-radius: 20px;
+  padding: 38px 24px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.fair-committee-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-soft-gold);
+  box-shadow: var(--shadow-hover);
+}
+
+.fair-committee-photo-box {
+  width: 88px;
+  height: 88px;
+  border-radius: 18px;
+  background-color: var(--color-bg-primary);
+  border: 2px solid var(--color-soft-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(176, 141, 87, 0.16);
+  overflow: hidden;
+}
+
+.fair-committee-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fair-committee-icon-fallback {
+  width: 44px;
+  height: 44px;
+  color: var(--color-soft-gold);
+}
+
+.fair-committee-card-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.fair-committee-card-role {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+.fair-navigation-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-light-beige);
+}
+
+.fair-nav-btn {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-soft-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.fair-nav-btn:hover {
+  border-color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+}
+
+@media (max-width: 768px) {
+  .fair-committee-grid {
+    grid-template-columns: 1fr;
+  }
+}

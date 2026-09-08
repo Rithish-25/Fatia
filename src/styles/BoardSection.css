@@ -1,0 +1,31 @@
+.board-section {
+  margin-bottom: 48px;
+}
+
+.board-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.board-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-light-beige);
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.board-grid.featured {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
