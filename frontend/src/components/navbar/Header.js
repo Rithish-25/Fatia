@@ -87,7 +87,10 @@ const Header = () => {
             to="/"
             end
             className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Home
           </NavLink>
@@ -95,7 +98,10 @@ const Header = () => {
           <NavLink
             to="/members"
             className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Members
           </NavLink>
@@ -103,7 +109,10 @@ const Header = () => {
           <NavLink
             to="/board"
             className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Board
           </NavLink>
@@ -111,17 +120,26 @@ const Header = () => {
           <NavLink
             to="/events"
             className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Events
           </NavLink>
 
-          <MobileFairMenu onItemClick={() => setMobileMenuOpen(false)} />
+          <MobileFairMenu onItemClick={() => {
+            setMobileMenuOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }} />
 
           <NavLink
             to="/contact"
             className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Contact Us
           </NavLink>

@@ -10,10 +10,12 @@ import Fair from './pages/Fair';
 import FairYearPage from './pages/FairYearPage';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header />
         <div style={{ flex: 1 }}>

@@ -10,11 +10,13 @@
 .members-search-wrapper {
   position: relative;
   flex: 1;
+  width: 100%;
   max-width: 440px;
 }
 
 .members-search-input {
   width: 100%;
+  box-sizing: border-box;
   padding: 12px 16px 12px 42px;
   font-size: 0.95rem;
   font-family: inherit;
@@ -49,6 +51,7 @@
   background-color: var(--color-soft-gold-light);
   padding: 6px 16px;
   border-radius: 20px;
+  white-space: nowrap;
 }
 
 .members-grid {
@@ -78,10 +81,36 @@
   .members-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .members-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .members-search-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .members-count-badge {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
   .members-grid {
     grid-template-columns: 1fr;
+  }
+
+  .members-search-input {
+    font-size: 0.9rem;
+    padding: 10px 14px 10px 38px;
+  }
+
+  .members-search-icon {
+    left: 12px;
+    width: 18px;
+    height: 18px;
   }
 }
