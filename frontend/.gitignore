@@ -1,11 +1,13 @@
 # Dependencies
-node_modules/
+/node_modules
 /.pnp
 .pnp.js
 
+# Testing
+/coverage
+
 # Production build output
-build/
-dist/
+/build
 
 # Environment files
 .env
