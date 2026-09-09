@@ -23,7 +23,7 @@ const Members = () => {
       <SectionTitle
         tag="State Registry"
         title="FATIA Member Associations"
-        subtitle="Complete registry of all 74 member associations across Tamil Nadu districts with their respective Head Table office bearers."
+        subtitle="Complete registry of all 76 member associations across Tamil Nadu districts with their respective Head Table office bearers."
       />
 
       <div className="members-controls">

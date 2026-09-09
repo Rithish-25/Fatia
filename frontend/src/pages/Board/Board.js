@@ -10,7 +10,7 @@ const Board = () => {
     <PageContainer>
       <SectionTitle
         tag="State Leadership"
-        title="FATIA Board of Directors"
+        title="FATIA Board"
         subtitle="Executive Core Office Bearers and Regional Vice Presidents leading the Federation across Tamil Nadu."
       />
 

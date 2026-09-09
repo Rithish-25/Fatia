@@ -40,7 +40,10 @@ const Footer = () => {
                 <Link to="/" className="footer-link-item">Home Overview</Link>
               </li>
               <li>
-                <Link to="/members" className="footer-link-item">Member Associations (74)</Link>
+                <Link to="/about" className="footer-link-item">About FATIA</Link>
+              </li>
+              <li>
+                <Link to="/members" className="footer-link-item">Member Associations (76)</Link>
               </li>
               <li>
                 <Link to="/board" className="footer-link-item">Board & Leadership</Link>

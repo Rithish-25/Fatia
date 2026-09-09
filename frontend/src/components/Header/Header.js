@@ -8,6 +8,7 @@ import './Header.css';
 
 const navItemsList = [
   { label: 'Home', route: '/' },
+  { label: 'About Us', route: '/about' },
   { label: 'Members', route: '/members' },
   { label: 'Board', route: '/board' },
   { label: 'Events', route: '/events' },
@@ -93,6 +94,17 @@ const Header = () => {
             }}
           >
             Home
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
+            About Us
           </NavLink>
 
           <NavLink

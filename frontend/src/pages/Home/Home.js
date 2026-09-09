@@ -14,16 +14,16 @@ const Home = () => {
           alt="FATIA Association Primary Branding Logo"
           className="hero-logo-img"
         />
-        <span className="hero-tagline">Apex State Body of IT Associations</span>
+        <span className="hero-tagline">APEX FEDERATION OF TRADE & INDUSTRY ASSOCIATIONS</span>
         <h1 className="hero-title">
-          Federation of All Tamilnadu IT Associations
+          FEDERATION OF ALL TRADE & INDUSTRY ASSOCIATIONS OF ERODE DISTRICT
         </h1>
         <p className="hero-description">
-          Unifying 74 regional district associations, representing thousands of IT technology dealers, distributors, enterprise partners, and software innovators across Tamil Nadu.
+          Unifying 76 regional trade and industry associations, representing thousands of business enterprises, manufacturers, dealers, and commercial partners across Erode District.
         </p>
         <div className="hero-cta-group">
           <Link to="/members" className="btn-primary-gold">
-            Explore 74 Member Associations
+            Explore 76 Member Associations
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
             </svg>
@@ -37,20 +37,16 @@ const Home = () => {
       {/* Key Association Statistics */}
       <section className="stats-grid">
         <div className="stat-card">
-          <div className="stat-number">74</div>
+          <div className="stat-number">76</div>
           <div className="stat-label">Member Associations</div>
         </div>
         <div className="stat-card">
-          <div className="stat-number">38+</div>
-          <div className="stat-label">Districts Represented</div>
-        </div>
-        <div className="stat-card">
           <div className="stat-number">6+</div>
-          <div className="stat-label">Technology Fair Editions</div>
+          <div className="stat-label">FATIA Fair Editions</div>
         </div>
         <div className="stat-card">
-          <div className="stat-number">5,000+</div>
-          <div className="stat-label">IT Enterprise Members</div>
+          <div className="stat-number">4000+</div>
+          <div className="stat-label">Business Enterprises</div>
         </div>
       </section>
 
@@ -71,7 +67,7 @@ const Home = () => {
             </div>
             <h3 className="quick-nav-title">Member Associations</h3>
             <p className="quick-nav-text">
-              Comprehensive registry of all 74 member associations with active Head Table office bearers across Tamil Nadu.
+              Comprehensive registry of all 76 member associations with active Head Table office bearers across Tamil Nadu.
             </p>
             <Link to="/members" className="quick-nav-link-btn">
               View Members Registry →

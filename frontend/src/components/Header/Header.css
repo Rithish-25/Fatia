@@ -2,10 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: var(--color-charcoal);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-light-beige);
-  box-shadow: 0 2px 10px rgba(46, 46, 46, 0.03);
+  border-bottom: 2px solid var(--color-soft-gold);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
 }
 
 .header-container {
@@ -17,6 +17,10 @@
   justify-content: space-between;
 }
 
+.header-root .logo-title {
+  color: #FFFFFF !important;
+}
+
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -25,9 +29,9 @@
 
 .nav-link-item {
   position: relative;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-charcoal);
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #FFFFFF;
   padding: 8px 0;
   transition: color var(--transition-fast);
 }
@@ -58,9 +62,10 @@
   gap: 4px;
   background: none;
   border: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-charcoal);
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #FFFFFF;
   padding: 8px 0;
   cursor: pointer;
   transition: color var(--transition-fast);
@@ -76,7 +81,7 @@
   background: none;
   border: none;
   padding: 8px;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -98,10 +103,10 @@
     top: 76px;
     left: 0;
     right: 0;
-    background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-light-beige);
+    background-color: var(--color-charcoal);
+    border-bottom: 2px solid var(--color-soft-gold);
     padding: 16px 24px 24px 24px;
-    box-shadow: 0 10px 25px rgba(46, 46, 46, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -109,9 +114,9 @@
   }
 
   .mobile-drawer-link {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--color-charcoal);
+    font-size: 1rem;
+    font-weight: 550;
+    color: #FFFFFF;
     padding: 12px 16px;
     border-radius: var(--radius-sm);
     transition: background-color var(--transition-fast);
@@ -119,7 +124,7 @@
 
   .mobile-drawer-link.active,
   .mobile-drawer-link:hover {
-    background-color: var(--color-soft-gold-light);
+    background-color: rgba(176, 141, 87, 0.2);
     color: var(--color-soft-gold);
   }
 }

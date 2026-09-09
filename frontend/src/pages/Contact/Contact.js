@@ -54,6 +54,19 @@ const Contact = () => {
                 <div className="contact-detail-value">
                   3, Vivekananda Street, Veerappampalayam,<br />
                   Erode - 638 012, Tamil Nadu, India.
+                  <div style={{ marginTop: '10px' }}>
+                    <a
+                      href="https://maps.app.goo.gl/zjJXHsiLddey3Spd7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-map-inline-link"
+                    >
+                      <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" style={{ marginRight: '6px', verticalAlign: 'text-bottom' }}>
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                      </svg>
+                      Get Directions on Google Maps ↗
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -68,7 +81,7 @@ const Contact = () => {
               <div>
                 <div className="contact-detail-label">Official Cell / Phone</div>
                 <div className="contact-detail-value">
-                  <a href="tel:9842333356" style={{ color: 'inherit' }}>
+                  <a href="tel:9842333356" style={{ color: 'inherit', textDecoration: 'none' }}>
                     +91 98423 33356
                   </a>
                 </div>
@@ -85,7 +98,7 @@ const Contact = () => {
               <div>
                 <div className="contact-detail-label">Official Email</div>
                 <div className="contact-detail-value">
-                  <a href="mailto:fatia.erode@gmail.com" style={{ color: 'inherit' }}>
+                  <a href="mailto:fatia.erode@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                     fatia.erode@gmail.com
                   </a>
                 </div>
@@ -99,26 +112,16 @@ const Contact = () => {
           <h3 className="contact-form-title">Send a Direct Message</h3>
 
           {submitted ? (
-            <div style={{ textAlign: 'center', padding: '30px 10px' }}>
-              <div style={{
-                width: '56px',
-                height: '56px',
-                borderRadius: '50%',
-                backgroundColor: 'var(--color-soft-gold-light)',
-                color: 'var(--color-soft-gold)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: '0 auto 16px auto'
-              }}>
-                <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+            <div className="contact-success-box">
+              <div className="contact-success-icon">
+                <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
                 </svg>
               </div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', marginBottom: '8px' }}>
+              <h4 className="contact-success-title">
                 Thank You for Contacting Us
               </h4>
-              <p style={{ color: 'var(--color-slate-gray)' }}>
+              <p className="contact-success-text">
                 Your message has been logged. The FATIA secretariat team will get back to you shortly.
               </p>
             </div>
@@ -193,11 +196,43 @@ const Contact = () => {
                 />
               </div>
 
-              <button type="submit" className="btn-primary-gold" style={{ marginTop: '8px' }}>
-                Send Message
-              </button>
+              <div className="contact-submit-wrapper">
+                <button type="submit" className="btn-primary-gold contact-submit-btn">
+                  Send Message
+                </button>
+              </div>
             </form>
           )}
+        </div>
+      </div>
+
+      {/* Google Maps Integration Section */}
+      <div className="contact-map-card">
+        <div className="contact-map-header">
+          <div>
+            <h3 className="contact-map-title">FATIA Sakthi Masala Hall</h3>
+          </div>
+          <a
+            href="https://maps.app.goo.gl/zjJXHsiLddey3Spd7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary-gold contact-map-cta-btn"
+          >
+            Open in Google Maps 🗺️
+          </a>
+        </div>
+
+        <div className="contact-map-iframe-container">
+          <iframe
+            title="FATIA Shakthi Masala Hall Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.758963503164!2d77.702582!3d11.352358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f015b630e61%3A0xb0046522c0953a1a!2sVeerappampalayam%2C%20Erode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="380"
+            style={{ border: 0, borderRadius: '16px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </PageContainer>
