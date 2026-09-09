@@ -2,3 +2,112 @@
 .board-page-container {
   min-height: 80vh;
 }
+
+.past-terms-section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px dashed var(--color-light-beige);
+}
+
+.past-terms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 28px;
+}
+
+.past-term-block {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.past-term-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--color-soft-gold);
+}
+
+.past-term-header {
+  margin-bottom: 24px;
+}
+
+.past-term-badge {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.past-term-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* Honourary Members Section Styles */
+.honourary-section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px dashed var(--color-light-beige);
+}
+
+.honourary-search-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.honourary-search-input {
+  flex: 1;
+  min-width: 260px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: 1px solid var(--color-light-beige);
+  border-radius: var(--radius-md);
+  outline: none;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.honourary-search-input:focus {
+  border-color: var(--color-soft-gold);
+  box-shadow: 0 0 0 3px var(--color-soft-gold-light);
+}
+
+.honourary-count-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.honourary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .past-term-block {
+    padding: 24px 16px;
+  }
+}

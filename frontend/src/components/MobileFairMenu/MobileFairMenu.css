@@ -1,6 +1,7 @@
 .mobile-fair-accordion {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .mobile-fair-header {
@@ -8,9 +9,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-charcoal);
+  font-size: 1rem;
+  font-weight: 550;
+  color: #FFFFFF !important;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
   background: none;
@@ -21,13 +22,14 @@
 
 .mobile-fair-header:hover,
 .mobile-fair-header.active {
-  background-color: var(--color-soft-gold-light);
-  color: var(--color-soft-gold);
+  background-color: rgba(176, 141, 87, 0.2);
+  color: var(--color-soft-gold) !important;
 }
 
 .mobile-fair-icon {
   width: 18px;
   height: 18px;
+  stroke: currentColor;
   transition: transform var(--transition-fast);
 }
 
@@ -38,27 +40,29 @@
 .mobile-fair-years-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  padding: 8px 12px;
-  background-color: var(--color-bg-primary);
+  gap: 8px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.06);
   border-radius: var(--radius-sm);
   margin-top: 4px;
 }
 
 .mobile-fair-year-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-charcoal);
-  padding: 6px 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  padding: 8px 10px;
   text-align: center;
-  border-radius: 6px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-light-beige);
-  transition: border-color var(--transition-fast), color var(--transition-fast);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
 .mobile-fair-year-link:hover,
 .mobile-fair-year-link.active {
+  background-color: var(--color-soft-gold);
   border-color: var(--color-soft-gold);
-  color: var(--color-soft-gold);
+  color: #FFFFFF !important;
 }

@@ -16,7 +16,7 @@ const FairYearPage = () => {
         <div style={{ textAlign: 'center', padding: '60px 20px' }}>
           <h2>Fair Edition Not Found</h2>
           <p style={{ color: 'var(--color-slate-gray)', marginTop: '8px' }}>
-            No records found for the FATIA Technology Fair year "{year}".
+            No records found for the FATIA Fair year "{year}".
           </p>
           <Link to="/fair" className="btn-primary-gold" style={{ marginTop: '20px', display: 'inline-block' }}>
             ← Back to All Fair Editions
@@ -30,7 +30,7 @@ const FairYearPage = () => {
     <PageContainer>
       {/* Fair Edition Header Banner */}
       <div className="fair-year-header-card">
-        <span className="fair-year-badge-pill">Annual Technology Expo</span>
+        <span className="fair-year-badge-pill">Trade & Industry Expo</span>
         <h1 className="fair-year-title">{fairData.title}</h1>
         <p className="fair-year-tagline">{fairData.summary}</p>
       </div>
@@ -41,14 +41,28 @@ const FairYearPage = () => {
         <p className="fair-about-text">{fairData.aboutText}</p>
       </div>
 
-      {/* Fair Committee Members */}
-      {fairData.committee && fairData.committee.length > 0 && (
+      {/* Board Members Section */}
+      {fairData.boardMembers && fairData.boardMembers.length > 0 && (
         <div className="fair-committee-section">
           <h2 className="fair-section-heading" style={{ marginBottom: '20px' }}>
-            Official Fair Committee ({fairData.year})
+            Board Members ({fairData.year})
           </h2>
           <div className="fair-committee-grid">
-            {fairData.committee.map((member, idx) => (
+            {fairData.boardMembers.map((member, idx) => (
+              <BoardMemberCard key={idx} member={member} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Committee Members Section */}
+      {fairData.additionalCommittee && fairData.additionalCommittee.length > 0 && (
+        <div className="fair-committee-section" style={{ marginTop: '48px' }}>
+          <h2 className="fair-section-heading" style={{ marginBottom: '20px' }}>
+            Committee Members ({fairData.year})
+          </h2>
+          <div className="fair-committee-grid">
+            {fairData.additionalCommittee.map((member, idx) => (
               <BoardMemberCard key={idx} member={member} />
             ))}
           </div>

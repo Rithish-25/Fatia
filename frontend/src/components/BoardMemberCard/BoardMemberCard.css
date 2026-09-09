@@ -3,7 +3,7 @@
   border: none;
   border-radius: 18px;
   padding: 24px 12px;
-  min-height: 260px;
+  min-height: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,14 +26,14 @@
 }
 
 .board-member-photo-frame {
-  width: 104px;
-  height: 124px;
+  width: 140px;
+  height: 140px;
   border-radius: 12px;
   overflow: hidden;
   border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
   margin-bottom: 14px;
-  background-color: var(--color-bg-primary);
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +42,8 @@
 .board-member-photo-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
 }
 
 .board-member-mock-avatar {

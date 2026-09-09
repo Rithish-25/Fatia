@@ -13,7 +13,7 @@ const MobileFairMenu = ({ onItemClick }) => {
         className={`mobile-fair-header ${isOpen ? 'active' : ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span>Fair (2014 - 2027)</span>
+        <span>Fair</span>
         <svg
           className={`mobile-fair-icon ${isOpen ? 'open' : ''}`}
           fill="none"
@@ -26,19 +26,6 @@ const MobileFairMenu = ({ onItemClick }) => {
 
       {isOpen && (
         <div className="mobile-fair-years-grid">
-          <NavLink
-            to="/fair"
-            className={({ isActive }) =>
-              `mobile-fair-year-link ${isActive ? 'active' : ''}`
-            }
-            onClick={() => {
-              onItemClick();
-              setIsOpen(false);
-            }}
-            style={{ gridColumn: 'span 3', fontWeight: 'bold' }}
-          >
-            All Fair Years Overview
-          </NavLink>
           {fairYears.map((year) => (
             <NavLink
               key={year}

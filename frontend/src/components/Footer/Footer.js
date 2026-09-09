@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import './Footer.css';
 
@@ -30,36 +29,6 @@ const Footer = () => {
                 ஈரோடு மாவட்ட அனைத்து தொழில் வணிக சங்கங்களின் கூட்டமைப்பு
               </span>
             </p>
-          </div>
-
-          {/* Quick Links Column */}
-          <div>
-            <h4 className="footer-heading">Quick Navigation</h4>
-            <ul className="footer-links-list">
-              <li>
-                <Link to="/" className="footer-link-item">Home Overview</Link>
-              </li>
-              <li>
-                <Link to="/about" className="footer-link-item">About FATIA</Link>
-              </li>
-              <li>
-                <Link to="/members" className="footer-link-item">Member Associations (76)</Link>
-              </li>
-              <li>
-                <Link to="/board" className="footer-link-item">Board & Leadership</Link>
-              </li>
-              <li>
-                <Link to="/events" className="footer-link-item">Events & Conventions</Link>
-              </li>
-              <li>
-                <Link to="/fair" className="footer-link-item">Technology Fairs (2014-2027)</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="footer-link-item" style={{ color: 'var(--color-soft-gold)', fontWeight: 'bold' }}>
-                  Contact Us →
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Contact Column */}

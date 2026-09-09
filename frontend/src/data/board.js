@@ -149,6 +149,57 @@ export const boardData = {
       phone: "98431 82989",
       image: "/assets/board/k_manickam.jpg"
     }
+  ],
+  pastTerms: [
+    {
+      termTitle: "FATIA 1st Term Board Members",
+      members: [
+        { name: "R.S. Nataraja Muthaliyar", position: "Founder President", positionTamil: "நிறுவனத் தலைவர்" },
+        { name: "C. Krishna Moorthy", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "A.K. Shanmuga Sundaram", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "R.M. Devaraja", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    },
+    {
+      termTitle: "FATIA 2nd Term Board Members",
+      members: [
+        { name: "R.S. Nataraja Muthaliyar", position: "President", positionTamil: "தலைவர்" },
+        { name: "N. Sivanesan", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "R.M. Devaraja", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    },
+    {
+      termTitle: "FATIA 3rd Term Board Members",
+      members: [
+        { name: "N. Sivanesan", position: "President", positionTamil: "தலைவர்" },
+        { name: "T. Jagadeesan", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "V.K. Rajamanickam", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    },
+    {
+      termTitle: "FATIA 4th Term Board Members",
+      members: [
+        { name: "N. Sivanesan", position: "President", positionTamil: "தலைவர்" },
+        { name: "V.K. Rajamanickam", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "V.K. Kumarasamy", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    },
+    {
+      termTitle: "FATIA 5th Term Board Members",
+      members: [
+        { name: "T. Jagadeesan", position: "President", positionTamil: "தலைவர்" },
+        { name: "C. Balakrishnan", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "C. Duraisamy", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    },
+    {
+      termTitle: "FATIA 6th Term Board Members",
+      members: [
+        { name: "V.K. Rajamanickam", position: "President", positionTamil: "தலைவர்" },
+        { name: "P. Ravichandran", position: "General Secretary", positionTamil: "பொதுச் செயலாளர்" },
+        { name: "R. Muruganantham", position: "Treasurer", positionTamil: "பொருளாளர்" }
+      ]
+    }
   ]
 };
 

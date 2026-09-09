@@ -11,6 +11,8 @@
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   position: relative;
   overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .association-card::before {
@@ -53,4 +55,13 @@
   font-weight: 700;
   color: var(--color-charcoal);
   line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .association-card {
+    padding: 20px 16px;
+    min-height: auto;
+  }
 }
