@@ -56,6 +56,11 @@ const Board = () => {
         members={boardData.directors}
       />
 
+      <BoardSection
+        title="Committee Chairmen"
+        members={boardData.committeeChairmen}
+      />
+
       {/* Past Terms Board Members Section */}
       {boardData.pastTerms && boardData.pastTerms.length > 0 && (
         <div className="past-terms-section">
@@ -107,7 +112,8 @@ const Board = () => {
               key={idx}
               member={{
                 name: m.name,
-                position: m.company
+                position: m.company,
+                image: m.image
               }}
             />
           ))}
@@ -128,7 +134,8 @@ const Board = () => {
               key={idx}
               member={{
                 name: m.name,
-                position: m.company
+                position: m.company,
+                image: m.image
               }}
             />
           ))}

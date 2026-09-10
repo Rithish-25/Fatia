@@ -1,45 +1,89 @@
 export const fairYears = [2027, 2025, 2023, 2018, 2016, 2015, 2013];
 
 const mockMemberNamesByYear = {
-  2027: ["P. Dhanapalan (Chairman)", "N.T. Moorthy (Secretary)", "P. Gopalakrishnan (Treasurer)"],
-  2025: [
-    "K. Jifry (Chairman)",
-    "P. Chinnasamy (Secretary)",
-    "K. Shivakumar (Treasurer)",
-    "V.K. Rajamanickam (Founder Fatia Fair)",
-    "R. Senthilkumar (Vice Chairman)",
-    "N.T. Moorthy (IPC)",
-    "P. Ravichandran (Co-ordinator)",
-    "R. Muruganantham (PRO)",
-    "K. Muthusamy (Joint Secretary)",
-    "A. Selvaraj (Joint Secretary)",
-    "R. Manohar (Joint Secretary)",
-    "M.S. Chinnasamy (Joint Secretary)",
-    "V. Rajamanickam (Advisor)",
-    "S. Sengutuvan (Advisor)",
-    "Balu @ P. Dhanabalan (Advisor)",
-    "C. Muthusamy (Advisor)",
-    "M.R. Vengatachalam (Advisor)",
-    "C. Balakrishnan (Advisor)",
-    "V.M. Elango (Director)",
-    "K. Anbalagan (Director)",
-    "M. Noor Mohmmed (Director)",
-    "K.K. Vimal Karuppannan (Director)",
-    "S. Chidambara Saravanan (Director)",
-    "M. Sathya Moorthi (Director)",
-    "S. Raja Mohamed (Director)",
-    "B. Sree Prabhu (Director)",
-    "S. Gnanavelan (Director)",
-    "V. Dhanasekar (Director)",
-    "A.P. Nallashivam (Editor - Malar Committee)",
-    "S. Anand Kumar (Editor - Malar Committee)",
-    "P. Gowri Shankar (Editor - Malar Committee)"
+  2027: [
+    { name: "P. Dhanapalan", role: "Chairman", image: "/assets/board/Balu@P.Dhanapalan-Vice President.jpg" },
+    { name: "N.T. Moorthy", role: "Secretary", image: "/assets/board/N.T.Moorthy-Joint  Secretary.jpg" },
+    { name: "P. Gopalakrishnan", role: "Treasurer", image: "/assets/board/P.Gopalakrishnan-Assistant Treasurer.jpg" }
   ],
-  2023: ["N.T. Moorthy (Chairman)", "R. Senthilkumar (Secretary)", "P. Chinnasamy (Treasurer)"],
-  2018: ["C. Balakrishnan (Chairman)", "K. Jifry (Secretary)", "R. Senthilkumar (Treasurer)"],
-  2016: ["C. Balakrishnan (Chairman)", "N.T. Moorthy (Secretary)", "K. Jifry (Treasurer)"],
-  2015: ["V.K. Rajamanickam (Chairman)", "P. Jayaprakash (Secretary)", "N.T. Moorthy (Treasurer)"],
-  2013: ["V.K. Rajamanickam (Founder Chairman)", "C. Balakrishnan (Secretary)", "R.V. Murugananthan (Treasurer)"]
+  2025: [
+    // Board Members (Top 3)
+    { name: "K. Jifry", role: "Chairman", image: "/assets/fair_committee/K.Jifry-Vice President.jpg" },
+    { name: "P. Chinnasamy", role: "Secretary", image: "/assets/fair_committee/P.CHINNASAMY  PONSHANKAR AGENCIES.jpg" },
+    { name: "K. Shivakumar", role: "Treasurer", image: "/assets/board/K.Sivakumar-Director.jpg" },
+
+    // Core Committee & Key Officers
+    { name: "V.K. Rajamanickam", role: "Founder Fatia Fair", image: "/assets/fair_committee/V.K.Rajamanickam-Founder FATIA FAIR.jpg" },
+    { name: "R. Senthilkumar", role: "Vice Chairman", image: "/assets/fair_committee/Senthil.jpg" },
+    { name: "N.T. Moorthy", role: "IPC", image: "/assets/fair_committee/N.T.Moorthy-  FATIA FAIR 2023 Chairman.jpg" },
+    { name: "P. Ravichandran", role: "Co-ordinator", image: "/assets/fair_committee/P.Ravichandran-Co-ordinator.jpg" },
+    { name: "R. Muruganantham", role: "PRO", image: "/assets/fair_committee/R.Muruganantham-PRO.jpg" },
+
+    // Joint Secretaries
+    { name: "K. Kailasapathy", role: "Joint Secretary", image: "/assets/fair_committee/K.Kailasapathy-Joint Secretary.jpg" },
+    { name: "A. Selvaraj", role: "Joint Secretary", image: "/assets/fair_committee/A.Selvaraj-Director.jpeg" },
+    { name: "R. Manohar", role: "Joint Secretary", image: "/assets/fair_committee/manokar rmbf rooster sheet photo.JPG" },
+    { name: "M.S. Chinnasamy", role: "Joint Secretary", image: "/assets/fair_committee/M.S.Chinnasamy- Director.jpeg" },
+
+    // Advisors
+    { name: "V. Rajamanickam", role: "Advisor", image: "/assets/fair_committee/V.Rajamanickam-Advisor.jpg" },
+    { name: "S. Senguttuvan", role: "Advisor", image: "/assets/fair_committee/S.Senguttuvan-Advisor.jpg" },
+    { name: "Balu @ P. Dhanabalan", role: "Advisor", image: "/assets/fair_committee/Balu@P.Dhanapalan-Advisor.jpg" },
+    { name: "C. Muthusamy", role: "Advisor", image: "/assets/fair_committee/C.Muthusamy-Advisor.jpeg" },
+    { name: "M.R. Venkatachalam", role: "Advisor", image: "/assets/fair_committee/M.R. Venkatachalam.jpg" },
+    { name: "C. Doraisamy", role: "Advisor", image: "/assets/fair_committee/C.Doraisamy-Advisor.jpg" },
+    { name: "T. Jagadeesan", role: "Advisor", image: "/assets/fair_committee/T.Jagadeesan-Advisor.jpg" },
+    { name: "R.S. Nataraja Mudaliyar", role: "Advisor", image: "/assets/fair_committee/R.S. Nataraja Muthaliyar.jpg" },
+    { name: "P. Jayaprakash", role: "Advisor", image: "/assets/fair_committee/Jayprakash.jpg" },
+
+    // Committee Chairmen
+    { name: "C. Balakrishnan", role: "Chairman - Job Opportunity Committee", image: "/assets/fair_committee/C.Balakrishnan-Chairman, Job Oppurtunity Committee.jpg" },
+    { name: "N. Nagarajan", role: "Chairman - Public Relation Committee", image: "/assets/fair_committee/N.Nagarajan-Chariman, Public Relation Committee.jpg" },
+
+    // Directors
+    { name: "V.M. Elango", role: "Director", image: "/assets/fair_committee/V.M.Elango-Director.jpg" },
+    { name: "M. Noor Mohammad", role: "Director", image: "/assets/fair_committee/M.Noor Mohammad-Director.jpeg" },
+    { name: "K.K. Vimal Karuppannan", role: "Director", image: "/assets/fair_committee/Vimal-removebg-preview.png" },
+    { name: "S. Chidambara Saravanan", role: "Director", image: "/assets/fair_committee/S.Chidambara Saravanan-Director.jpeg" },
+    { name: "M. Sathya Moorthi", role: "Director", image: "/assets/fair_committee/Sathyamoorthy.jpg" },
+    { name: "S. Raja Mohamed", role: "Director", image: "/assets/fair_committee/Raja Muhameed.jpg" },
+    { name: "B. Sree Prabhu", role: "Director", image: "/assets/board/006.jpg" },
+    { name: "S. Gnanavelan", role: "Director", image: "/assets/fair_committee/Gnanavelan-Director.jpeg" },
+    { name: "V. Dhanasekar", role: "Director", image: "/assets/fair_committee/V.Dhanasekar - Director.jpeg" },
+    { name: "C. Dinesh", role: "Director", image: "/assets/fair_committee/C.Dinesh - Director.jpeg" },
+    { name: "L. Jagadeesh", role: "Director", image: "/assets/fair_committee/L.Jagadeesh - Director.jpeg" },
+    { name: "L.K.M. Suresh", role: "Director", image: "/assets/fair_committee/L.K.M.Suresh - Director.jpeg" },
+    { name: "Y. Sathish", role: "Director", image: "/assets/fair_committee/Y.Sathish - Director.jpeg" },
+
+    // Malar Committee Editors
+    { name: "A.P. Nallashivam", role: "Editor - Malar Committee", image: "/assets/fair_committee/A.P. Nallashivam - Malar.jpg" },
+    { name: "S. Anand Kumar", role: "Editor - Malar Committee", image: "/assets/fair_committee/Anand.jpg" }
+  ],
+  2023: [
+    { name: "N.T. Moorthy", role: "Chairman", image: "/assets/fair_committee/N.T.Moorthy-  FATIA FAIR 2023 Chairman.jpg" },
+    { name: "R. Senthilkumar", role: "Secretary", image: "/assets/fair_committee/Senthil.jpg" },
+    { name: "P. Chinnasamy", role: "Treasurer", image: "/assets/fair_committee/P.CHINNASAMY  PONSHANKAR AGENCIES.jpg" }
+  ],
+  2018: [
+    { name: "C. Balakrishnan", role: "Chairman", image: "/assets/fair_committee/C.Balakrishnan-Chairman, Job Oppurtunity Committee.jpg" },
+    { name: "K. Jifry", role: "Secretary", image: "/assets/fair_committee/K.Jifry-Vice President.jpg" },
+    { name: "R. Senthilkumar", role: "Treasurer", image: "/assets/fair_committee/Senthil.jpg" }
+  ],
+  2016: [
+    { name: "C. Balakrishnan", role: "Chairman", image: "/assets/fair_committee/C.Balakrishnan-Chairman, Job Oppurtunity Committee.jpg" },
+    { name: "N.T. Moorthy", role: "Secretary", image: "/assets/fair_committee/N.T.Moorthy-  FATIA FAIR 2023 Chairman.jpg" },
+    { name: "K. Jifry", role: "Treasurer", image: "/assets/fair_committee/K.Jifry-Vice President.jpg" }
+  ],
+  2015: [
+    { name: "V.K. Rajamanickam", role: "Chairman", image: "/assets/fair_committee/V.K.Rajamanickam-Founder FATIA FAIR.jpg" },
+    { name: "P. Jayaprakash", role: "Secretary", image: "/assets/fair_committee/Jayprakash.jpg" },
+    { name: "N.T. Moorthy", role: "Treasurer", image: "/assets/fair_committee/N.T.Moorthy-  FATIA FAIR 2023 Chairman.jpg" }
+  ],
+  2013: [
+    { name: "V.K. Rajamanickam", role: "Founder Chairman", image: "/assets/fair_committee/V.K.Rajamanickam-Founder FATIA FAIR.jpg" },
+    { name: "C. Balakrishnan", role: "Secretary", image: "/assets/fair_committee/C.Balakrishnan-Chairman, Job Oppurtunity Committee.jpg" },
+    { name: "R.V. Murugananthan", role: "Treasurer", image: "/assets/board/R.Muruganandam- Treasurer.jpg" }
+  ]
 };
 
 export const getFairDataByYear = (year) => {
@@ -50,18 +94,17 @@ export const getFairDataByYear = (year) => {
     return null;
   }
 
-  const rawMembers = mockMemberNamesByYear[numericYear] || [
-    `Member Officer 1 (Chairman)`,
-    `Member Officer 2 (Secretary)`,
-    `Member Officer 3 (Treasurer)`
-  ];
+  const rawMembers = mockMemberNamesByYear[numericYear] || [];
 
-  const allCommittee = rawMembers.map((str) => {
-    const match = str.match(/^(.*?)\s*\((.*?)\)$/);
-    if (match) {
-      return { name: match[1], title: match[2], role: match[2] };
+  const allCommittee = rawMembers.map((m) => {
+    if (typeof m === 'string') {
+      const match = m.match(/^(.*?)\s*\((.*?)\)$/);
+      if (match) {
+        return { name: match[1], title: match[2], role: match[2] };
+      }
+      return { name: m, title: "Fair Committee Member", role: "Fair Committee Member" };
     }
-    return { name: str, title: "Fair Committee Member", role: "Fair Committee Member" };
+    return { name: m.name, title: m.role, role: m.role, image: m.image };
   });
 
   const boardMembers = allCommittee.slice(0, 3);

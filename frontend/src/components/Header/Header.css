@@ -27,6 +27,12 @@
   gap: 32px;
 }
 
+.nav-item-dropdown-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
 .nav-link-item,
 a.nav-link-item,
 .nav-dropdown-trigger,
