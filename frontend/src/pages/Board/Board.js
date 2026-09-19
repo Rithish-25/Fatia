@@ -112,8 +112,7 @@ const Board = () => {
               key={idx}
               member={{
                 name: m.name,
-                position: m.company,
-                image: m.image
+                position: m.company
               }}
             />
           ))}
@@ -134,8 +133,7 @@ const Board = () => {
               key={idx}
               member={{
                 name: m.name,
-                position: m.company,
-                image: m.image
+                position: m.company
               }}
             />
           ))}
