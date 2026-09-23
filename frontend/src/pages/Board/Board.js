@@ -110,6 +110,7 @@ const Board = () => {
           {filteredHonourary.map((m, idx) => (
             <BoardMemberCard
               key={idx}
+              hideImage={true}
               member={{
                 name: m.name,
                 position: m.company

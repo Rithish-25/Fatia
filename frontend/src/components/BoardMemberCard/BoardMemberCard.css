@@ -97,3 +97,33 @@
   width: 12px;
   height: 12px;
 }
+
+/* Card layout when no image frame is displayed (text-only honourary cards) */
+.board-member-card.no-image-card {
+  min-height: 110px;
+  padding: 22px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.board-member-card.no-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.board-member-card.no-image-card .board-member-name-tamil {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #B71C1C;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.board-member-card.no-image-card .board-member-position-tamil {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0D47A1;
+  margin-bottom: 0;
+}
