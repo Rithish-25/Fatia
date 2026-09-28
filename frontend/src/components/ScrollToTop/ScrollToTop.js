@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
-  const { pathname, hash } = useLocation();
+  const { pathname, search, hash } = useLocation();
 
   useEffect(() => {
     if (hash) {
@@ -12,12 +12,20 @@ const ScrollToTop = () => {
         return;
       }
     }
+    
+    // Smooth animated scroll to top on page navigation
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: 'smooth'
     });
-  }, [pathname, hash]);
+    
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, [pathname, search, hash]);
 
   return null;
 };

@@ -18,18 +18,21 @@ const Home = () => {
         <h1 className="hero-title">
           FEDERATION OF ALL TRADE & INDUSTRY ASSOCIATIONS OF ERODE DISTRICT
         </h1>
+        <h2 className="hero-title-tamil">
+          ஈரோடு மாவட்ட அனைத்து தொழில் வணிக சங்கங்களின் கூட்டமைப்பு
+        </h2>
         <p className="hero-description">
           Unifying 76 regional trade and industry associations, representing thousands of business enterprises, manufacturers, dealers, and commercial partners across Erode District.
         </p>
         <div className="hero-cta-group">
-          <Link to="/members" className="btn-primary-gold">
-            Explore 76 Member Associations
+          <Link to="/board" className="btn-primary-gold">
+            Meet Board Leadership
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
             </svg>
           </Link>
-          <Link to="/board" className="btn-secondary-outline">
-            Meet Board Leadership
+          <Link to="/members" className="btn-secondary-outline">
+            Explore 76 Member Associations
           </Link>
         </div>
       </section>

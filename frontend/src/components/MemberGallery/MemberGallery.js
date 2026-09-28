@@ -27,6 +27,11 @@ const MemberGalleryItem = ({ photo, index }) => {
         className="member-gallery-photo"
         onError={() => setImageError(true)}
       />
+      {photo.caption && (
+        <div className="member-gallery-overlay">
+          <span className="member-gallery-overlay-caption">{photo.caption}</span>
+        </div>
+      )}
     </div>
   );
 };

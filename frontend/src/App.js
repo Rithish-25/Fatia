@@ -5,7 +5,9 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Members from './pages/Members/Members';
+import HonouraryMembers from './pages/HonouraryMembers/HonouraryMembers';
 import Board from './pages/Board/Board';
+import PastTermsBoard from './pages/PastTermsBoard/PastTermsBoard';
 import Events from './pages/Events/Events';
 import Fair from './pages/Fair/Fair';
 import FairYearPage from './pages/FairYearPage/FairYearPage';
@@ -39,7 +41,11 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/members" element={<Members />} />
+              <Route path="/members/honorary" element={<HonouraryMembers />} />
+              <Route path="/honorary-members" element={<HonouraryMembers />} />
               <Route path="/board" element={<Board />} />
+              <Route path="/board/past-terms" element={<PastTermsBoard />} />
+              <Route path="/board/past" element={<PastTermsBoard />} />
               <Route path="/events" element={<Events />} />
               <Route path="/fair" element={<Fair />} />
               <Route path="/fair/:year" element={<FairYearPage />} />

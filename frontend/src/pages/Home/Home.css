@@ -48,7 +48,15 @@
   font-weight: 800;
   color: var(--color-charcoal);
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+
+.hero-title-tamil {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-soft-gold);
+  line-height: 1.4;
+  margin-bottom: 24px;
 }
 
 .hero-description {
@@ -204,6 +212,10 @@
   .hero-title {
     font-size: 2.2rem;
   }
+
+  .hero-title-tamil {
+    font-size: 1.35rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -218,5 +230,9 @@
 
   .hero-title {
     font-size: 1.8rem;
+  }
+
+  .hero-title-tamil {
+    font-size: 1.15rem;
   }
 }

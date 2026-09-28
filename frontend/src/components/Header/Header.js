@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../Logo/Logo';
+import MembersDropdown from '../MembersDropdown/MembersDropdown';
+import MobileMembersMenu from '../MobileMembersMenu/MobileMembersMenu';
+import BoardDropdown from '../BoardDropdown/BoardDropdown';
+import MobileBoardMenu from '../MobileBoardMenu/MobileBoardMenu';
 import FairDropdown from '../FairDropdown/FairDropdown';
 import MobileFairMenu from '../MobileFairMenu/MobileFairMenu';
 import NavItem from '../NavItem/NavItem';
@@ -8,19 +12,21 @@ import './Header.css';
 
 const navItemsList = [
   { label: 'Home', route: '/' },
-  { label: 'About Us', route: '/about' },
-  { label: 'Members', route: '/members' },
-  { label: 'Board', route: '/board' },
-  { label: 'Events', route: '/events' },
-  { label: 'Fair', route: '/fair', hasDropdown: true },
+  { label: 'Members', route: '/members', hasDropdown: true, dropdownType: 'members' },
+  { label: 'Board', route: '/board', hasDropdown: true, dropdownType: 'board' },
+  { label: 'Fair', route: '/fair', hasDropdown: true, dropdownType: 'fair' },
   { label: 'Contact Us', route: '/contact' }
 ];
 
 const Header = () => {
+  const [showMembersDropdown, setShowMembersDropdown] = useState(false);
+  const [showBoardDropdown, setShowBoardDropdown] = useState(false);
   const [showFairDropdown, setShowFairDropdown] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  const isMembersActive = location.pathname.startsWith('/members');
+  const isBoardActive = location.pathname.startsWith('/board');
   const isFairActive = location.pathname.startsWith('/fair');
 
   return (
@@ -31,7 +37,49 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
           {navItemsList.map((item) => {
-            if (item.hasDropdown) {
+            if (item.hasDropdown && item.dropdownType === 'members') {
+              return (
+                <div
+                  key={item.label}
+                  className="nav-item-dropdown-container"
+                  onMouseEnter={() => setShowMembersDropdown(true)}
+                  onMouseLeave={() => setShowMembersDropdown(false)}
+                >
+                  <NavItem
+                    label={item.label}
+                    route={item.route}
+                    hasDropdown={true}
+                    isDropdownActive={isMembersActive}
+                  />
+                  {showMembersDropdown && (
+                    <MembersDropdown onItemClick={() => setShowMembersDropdown(false)} />
+                  )}
+                </div>
+              );
+            }
+
+            if (item.hasDropdown && item.dropdownType === 'board') {
+              return (
+                <div
+                  key={item.label}
+                  className="nav-item-dropdown-container"
+                  onMouseEnter={() => setShowBoardDropdown(true)}
+                  onMouseLeave={() => setShowBoardDropdown(false)}
+                >
+                  <NavItem
+                    label={item.label}
+                    route={item.route}
+                    hasDropdown={true}
+                    isDropdownActive={isBoardActive}
+                  />
+                  {showBoardDropdown && (
+                    <BoardDropdown onItemClick={() => setShowBoardDropdown(false)} />
+                  )}
+                </div>
+              );
+            }
+
+            if (item.hasDropdown && item.dropdownType === 'fair') {
               return (
                 <div
                   key={item.label}
@@ -96,49 +144,15 @@ const Header = () => {
             Home
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => {
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            About Us
-          </NavLink>
+          <MobileMembersMenu onItemClick={() => {
+            setMobileMenuOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }} />
 
-          <NavLink
-            to="/members"
-            className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => {
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            Members
-          </NavLink>
-
-          <NavLink
-            to="/board"
-            className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => {
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            Board
-          </NavLink>
-
-          <NavLink
-            to="/events"
-            className={({ isActive }) => `mobile-drawer-link ${isActive ? 'active' : ''}`}
-            onClick={() => {
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            Events
-          </NavLink>
+          <MobileBoardMenu onItemClick={() => {
+            setMobileMenuOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }} />
 
           <MobileFairMenu onItemClick={() => {
             setMobileMenuOpen(false);

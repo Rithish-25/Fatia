@@ -113,7 +113,38 @@ export const getFairDataByYear = (year) => {
   const taglineText = `Bringing together trade, industry, commerce, and enterprise across Tamil Nadu in ${numericYear}.`;
   const aboutBody = `The FATIA Fair ${numericYear} was conducted as a premier state-level trade and industrial expo by the Federation of All Trade & Industry Associations of Erode District. Bringing together leading business associations, industrial manufacturers, regional traders, and enterprise leaders, the expo showcased commercial innovations, trade growth, and industrial solutions. Organised with meticulous dedication by the FATIA Fair Committee, it served as a landmark platform for trade expansion and industrial networking across all districts.`;
 
-  const fiveMoments = [
+  const fairPhotosByYear = {
+    2013: [
+      { url: '/assets/fatia_fair/2013/DSC_2552.JPG', caption: `FATIA Fair 2013 Stage Inauguration` },
+      { url: '/assets/fatia_fair/2013/DSC_2672.JPG', caption: `FATIA Fair 2013 Trade Expo Hall` },
+      { url: '/assets/fatia_fair/2013/DSC_2714.JPG', caption: `FATIA Fair 2013 Dignitaries Presentation` },
+      { url: '/assets/fatia_fair/2013/DSC_3091.JPG', caption: `FATIA Fair 2013 Expo Stalls & Delegates` },
+      { url: '/assets/fatia_fair/2013/DSC_3418.JPG', caption: `FATIA Fair 2013 Committee Gathering` }
+    ],
+    2015: [
+      { url: '/assets/fatia_fair/2015/DSC_1019.JPG', caption: `FATIA Fair 2015 Industrial Expo` },
+      { url: '/assets/fatia_fair/2015/DSC_1179.JPG', caption: `FATIA Fair 2015 Keynote Session` },
+      { url: '/assets/fatia_fair/2015/DSC_1289.JPG', caption: `FATIA Fair 2015 Trade Pavilion` },
+      { url: '/assets/fatia_fair/2015/DSC_2182.JPG', caption: `FATIA Fair 2015 Executive Presentation` },
+      { url: '/assets/fatia_fair/2015/DSC_2289.JPG', caption: `FATIA Fair 2015 Committee Honor` }
+    ],
+    2016: [
+      { url: '/assets/fatia_fair/2016/IMG_0024.JPG', caption: `FATIA Fair 2016 Grand Expo Inauguration` },
+      { url: '/assets/fatia_fair/2016/IMG_1605.JPG', caption: `FATIA Fair 2016 Exhibition Stalls` },
+      { url: '/assets/fatia_fair/2016/IMG_1816.JPG', caption: `FATIA Fair 2016 Enterprise Forum` },
+      { url: '/assets/fatia_fair/2016/IMG_3100.JPG', caption: `FATIA Fair 2016 Industry Leaders` },
+      { url: '/assets/fatia_fair/2016/IMG_3403.JPG', caption: `FATIA Fair 2016 Closing Ceremony` }
+    ],
+    2018: [
+      { url: '/assets/fatia_fair/2018/IMG_1161.JPG', caption: `FATIA Fair 2018 Mega Trade Expo` },
+      { url: '/assets/fatia_fair/2018/IMG_1487.JPG', caption: `FATIA Fair 2018 Innovation Pavilion` },
+      { url: '/assets/fatia_fair/2018/IMG_1608.JPG', caption: `FATIA Fair 2018 Commercial Showcase` },
+      { url: '/assets/fatia_fair/2018/IMG_1777.JPG', caption: `FATIA Fair 2018 Executive Forum` },
+      { url: '/assets/fatia_fair/2018/IMG_2564.JPG', caption: `FATIA Fair 2018 Award Presentation` }
+    ]
+  };
+
+  const fiveMoments = fairPhotosByYear[numericYear] || [
     { caption: `Fair ${numericYear} Moment 1` },
     { caption: `Fair ${numericYear} Moment 2` },
     { caption: `Fair ${numericYear} Moment 3` },

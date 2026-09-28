@@ -1,0 +1,95 @@
+.past-terms-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.past-term-filter-btn {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  color: var(--color-slate-gray);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.past-term-filter-btn:hover {
+  border-color: var(--color-soft-gold);
+  color: var(--color-soft-gold);
+}
+
+.past-term-filter-btn.active {
+  background: var(--gradient-gold-primary);
+  color: var(--color-white);
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(176, 141, 87, 0.25);
+}
+
+.past-terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.past-term-card-section {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-beige);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.past-term-banner {
+  border-bottom: 1px solid var(--color-light-beige);
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+.past-term-number-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-soft-gold);
+  background-color: var(--color-soft-gold-light);
+  padding: 4px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.past-term-banner-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-charcoal);
+  margin-bottom: 6px;
+}
+
+.past-term-banner-desc {
+  font-size: 0.95rem;
+  color: var(--color-slate-gray);
+  margin: 0;
+}
+
+.past-term-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .past-term-card-section {
+    padding: 20px 16px;
+  }
+  .past-term-banner-title {
+    font-size: 1.3rem;
+  }
+  .past-term-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}

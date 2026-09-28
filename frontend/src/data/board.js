@@ -182,6 +182,11 @@ export const boardData = {
       image: "/assets/committee_chairmen/N.Nagarajan, Public Relation Committee Chairman.jpg"
     },
     {
+      position: "Chairman - IT Wing",
+      name: "R. Manokar",
+      image: "/assets/committee_chairmen/Manokar R.JPG"
+    },
+    {
       position: "Chairman - Textile Development Committee",
       name: "R. Praveen Kumar",
       image: "/assets/committee_chairmen/R.Praveen Kumar, Textile Development Committee Chairman.jpeg"

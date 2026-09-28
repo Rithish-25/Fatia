@@ -124,11 +124,11 @@ export const membersData = [
     id: 11,
     name: "ERODE INFORMATION TECHNOLOGY TRADERS ASSOCIATION",
     headTable: {
-      president: "R.MANOKAR",
+      president: "BASKARAN D",
       presidentPhone: "99941 40474",
-      secretary: "M.SADISHKUMAR",
+      secretary: "VASANTH KUMAR C",
       secretaryPhone: "98421 77577",
-      treasurer: "M.SENTHILKUMARAN",
+      treasurer: "LENIN R",
       treasurerPhone: "99444 34029"
     }
   },
