@@ -36,7 +36,7 @@ const MobileBoardMenu = ({ onItemClick }) => {
               setIsOpen(false);
             }}
           >
-            1. Current Board & Committee Chairmen
+            Current Board & Committee Chairmen
           </NavLink>
 
           <NavLink
@@ -49,7 +49,7 @@ const MobileBoardMenu = ({ onItemClick }) => {
               setIsOpen(false);
             }}
           >
-            2. Past Term Board (Term-wise)
+            Past Term Board (Term-wise)
           </NavLink>
         </div>
       )}

@@ -13,7 +13,6 @@ const BoardDropdown = ({ onItemClick }) => {
         }
         onClick={onItemClick}
       >
-        <span className="board-dropdown-num">1</span>
         <span>Current Board & Committee Chairmen</span>
       </NavLink>
 
@@ -24,7 +23,6 @@ const BoardDropdown = ({ onItemClick }) => {
         }
         onClick={onItemClick}
       >
-        <span className="board-dropdown-num">2</span>
         <span>Past Term Board (Term-wise)</span>
       </NavLink>
     </div>

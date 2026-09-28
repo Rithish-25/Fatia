@@ -13,7 +13,6 @@ const MembersDropdown = ({ onItemClick }) => {
         }
         onClick={onItemClick}
       >
-        <span className="members-dropdown-num">1</span>
         <span>FATIA Members Associations</span>
       </NavLink>
 
@@ -24,7 +23,6 @@ const MembersDropdown = ({ onItemClick }) => {
         }
         onClick={onItemClick}
       >
-        <span className="members-dropdown-num">2</span>
         <span>FATIA Honoury Members</span>
       </NavLink>
     </div>

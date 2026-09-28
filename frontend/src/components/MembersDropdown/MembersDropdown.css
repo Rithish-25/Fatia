@@ -50,28 +50,8 @@
   white-space: nowrap;
 }
 
-.members-dropdown-num {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--color-soft-gold);
-  background-color: var(--color-soft-gold-light);
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
 .members-dropdown-item:hover,
 .members-dropdown-item.active {
   background-color: var(--color-soft-gold-light);
   color: var(--color-soft-gold);
-}
-
-.members-dropdown-item:hover .members-dropdown-num,
-.members-dropdown-item.active .members-dropdown-num {
-  background-color: var(--color-soft-gold);
-  color: var(--color-white);
 }

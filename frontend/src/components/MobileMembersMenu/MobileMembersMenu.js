@@ -36,7 +36,7 @@ const MobileMembersMenu = ({ onItemClick }) => {
               setIsOpen(false);
             }}
           >
-            1. FATIA Members Associations
+            FATIA Members Associations
           </NavLink>
 
           <NavLink
@@ -49,7 +49,7 @@ const MobileMembersMenu = ({ onItemClick }) => {
               setIsOpen(false);
             }}
           >
-            2. FATIA Honoury Members
+            FATIA Honoury Members
           </NavLink>
         </div>
       )}
