@@ -57,14 +57,14 @@ const HonouraryMembers = () => {
             className={`honourary-tab-btn ${activeTab === 'honourary' ? 'active' : ''}`}
             onClick={() => setActiveTab('honourary')}
           >
-            1. Honoury Members ({honouraryMembers.length})
+            Honoury Members ({honouraryMembers.length})
           </button>
           <button
             type="button"
             className={`honourary-tab-btn ${activeTab === 'silverJubilee' ? 'active' : ''}`}
             onClick={() => setActiveTab('silverJubilee')}
           >
-            2. Silver Jubilee Members ({silverJubileeHallMembers.length})
+            Silver Jubilee Members ({silverJubileeHallMembers.length})
           </button>
         </div>
       </div>
@@ -73,7 +73,7 @@ const HonouraryMembers = () => {
       {(activeTab === 'all' || activeTab === 'honourary') && (
         <section className="honourary-page-section" id="honourary-section">
           <div className="section-header-banner">
-            <span className="section-badge">Section 1</span>
+            <span className="section-badge">Honoury Members</span>
             <h2 className="section-main-heading">FATIA Honoury Members</h2>
             <p className="section-sub-heading">
               Distinguished industry patrons, prominent business leaders, and supporters who strengthen the Federation.
@@ -85,11 +85,10 @@ const HonouraryMembers = () => {
               filteredHonourary.map((member, idx) => (
                 <BoardMemberCard
                   key={idx}
-                  hideImage={!member.image}
+                  hideImage={true}
                   member={{
                     name: member.name,
-                    position: member.company,
-                    image: member.image
+                    position: member.company
                   }}
                 />
               ))
@@ -106,7 +105,7 @@ const HonouraryMembers = () => {
       {(activeTab === 'all' || activeTab === 'silverJubilee') && (
         <section className="honourary-page-section" id="silver-jubilee-section">
           <div className="section-header-banner silver-jubilee-banner">
-            <span className="section-badge gold">Section 2</span>
+            <span className="section-badge gold">Silver Jubilee</span>
             <h2 className="section-main-heading">FATIA Silver Jubilee Hall Honourary Members</h2>
             <p className="section-sub-heading">
               Honourary patrons and visionaries who made invaluable contributions to the landmark FATIA Silver Jubilee Hall.
@@ -118,11 +117,10 @@ const HonouraryMembers = () => {
               filteredSilverJubilee.map((member, idx) => (
                 <BoardMemberCard
                   key={idx}
-                  hideImage={!member.image}
+                  hideImage={true}
                   member={{
                     name: member.name,
-                    position: member.company,
-                    image: member.image
+                    position: member.company
                   }}
                 />
               ))

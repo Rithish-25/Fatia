@@ -184,7 +184,7 @@ export const boardData = {
     {
       position: "Chairman - IT Wing",
       name: "R. Manokar",
-      image: "/assets/committee_chairmen/Manokar R.JPG"
+      image: "/assets/committee_chairmen/manokar rmbf rooster sheet photo.JPG"
     },
     {
       position: "Chairman - Textile Development Committee",

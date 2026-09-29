@@ -43,8 +43,8 @@ const Board = () => {
     <PageContainer>
       <SectionTitle
         tag="Current Term (2025 - 2028)"
-        title="Current Board & Committee Chairmen"
-        subtitle="Executive Core Office Bearers, Vice Presidents, Directors, and Committee Chairmen leading the Federation."
+        title="Current Board & Committee Chairman"
+        subtitle="Executive Core Office Bearers, Vice Presidents, Directors, and Committee Chairman leading the Federation."
       />
 
       {/* Search & Filter Controls */}
@@ -118,7 +118,7 @@ const Board = () => {
 
           {committeeChairmen.length > 0 && (
             <BoardSection
-              title="Committee Chairmen"
+              title="Committee Chairman"
               members={committeeChairmen}
             />
           )}

@@ -13,7 +13,7 @@ const BoardDropdown = ({ onItemClick }) => {
         }
         onClick={onItemClick}
       >
-        <span>Current Board & Committee Chairmen</span>
+        <span>Current Board & Committee Chairman</span>
       </NavLink>
 
       <NavLink

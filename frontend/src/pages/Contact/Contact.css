@@ -116,6 +116,50 @@
   text-decoration: underline;
 }
 
+.contact-social-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.contact-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.contact-social-btn.facebook {
+  background-color: #1877F2;
+  box-shadow: 0 2px 6px rgba(24, 119, 242, 0.22);
+}
+
+.contact-social-btn.facebook:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(24, 119, 242, 0.35);
+  filter: brightness(1.06);
+}
+
+.contact-social-btn.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 2px 6px rgba(220, 39, 67, 0.22);
+}
+
+.contact-social-btn.instagram:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(220, 39, 67, 0.35);
+  filter: brightness(1.06);
+}
+
 .contact-form-card {
   background-color: var(--color-white);
   border: none;

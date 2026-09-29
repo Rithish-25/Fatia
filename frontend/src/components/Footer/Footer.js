@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink to="/events" className="footer-link-item">
-                  Events & Conventions
+                  Events
                 </NavLink>
               </li>
               <li>
@@ -85,7 +85,7 @@ const Footer = () => {
 
           {/* Contact Column */}
           <div>
-            <h4 className="footer-heading">Secretariat Office</h4>
+            <h4 className="footer-heading">Administrative Office</h4>
             <div className="footer-contact-info">
               <p>3, Vivekananda Street, Veerappampalayam,<br />Erode - 638 012, Tamil Nadu, India.</p>
               <p><strong>Cell:</strong> <a href="tel:9842333356" style={{ color: 'inherit' }}>98423 33356</a></p>

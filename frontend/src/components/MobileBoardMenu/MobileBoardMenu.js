@@ -36,7 +36,7 @@ const MobileBoardMenu = ({ onItemClick }) => {
               setIsOpen(false);
             }}
           >
-            Current Board & Committee Chairmen
+            Current Board & Committee Chairman
           </NavLink>
 
           <NavLink
