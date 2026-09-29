@@ -117,10 +117,11 @@ const HonouraryMembers = () => {
               filteredSilverJubilee.map((member, idx) => (
                 <BoardMemberCard
                   key={idx}
-                  hideImage={true}
+                  hideImage={false}
                   member={{
                     name: member.name,
-                    position: member.company
+                    position: member.company,
+                    image: member.image
                   }}
                 />
               ))
