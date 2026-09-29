@@ -80,7 +80,6 @@ const MemberGallery = ({ photos = [], title = 'Photo Highlights' }) => {
                 {/* Bottom Caption Overlay Banner */}
                 <div className="carousel-caption-overlay">
                   <div className="carousel-caption-text">
-                    <span className="carousel-caption-badge">Highlight #{idx + 1}</span>
                     <p className="carousel-caption-title">
                       {photo?.caption || `FATIA Fair Moment ${idx + 1}`}
                     </p>
